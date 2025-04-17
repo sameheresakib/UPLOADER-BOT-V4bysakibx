@@ -12,7 +12,7 @@ logging.basicConfig(
 class Config(object):
     
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "6866332126:AAG9T-yCfMEwcA9mqswazO5bSEYe8qCqens")
-    API_ID = int(os.environ.get("API_ID", "13149093" ))
+    API_ID = int(os.environ.get("API_ID", "13149093"))
     API_HASH = os.environ.get("API_HASH", "26f93f36280d81e2f619d1101984dfc5")
     
     DOWNLOAD_LOCATION = "./DOWNLOADS"
@@ -31,9 +31,9 @@ class Config(object):
 
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
 
-    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://uploaderskbot:himu1122@cluster0.sbtvozx.mongodb.net/?retryWrites=true&w=majority")
 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "mongodb+srv://uploaderskbot:himu1122@cluster0.sbtvozx.mongodb.net/?retryWrites=true&w=majority"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002573938501"))
     LOGGER = logging
     OWNER_ID = int(os.environ.get("OWNER_ID", "1700797877"))
     SESSION_NAME = "Uploaderskbot"
