@@ -11,9 +11,9 @@ logging.basicConfig(
 
 class Config(object):
     
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    API_ID = int(os.environ.get("API_ID", ))
-    API_HASH = os.environ.get("API_HASH", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6866332126:AAG9T-yCfMEwcA9mqswazO5bSEYe8qCqens")
+    API_ID = int(os.environ.get("API_ID", "13149093" ))
+    API_HASH = os.environ.get("API_HASH", "26f93f36280d81e2f619d1101984dfc5")
     
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     MAX_FILE_SIZE = 2194304000
@@ -27,20 +27,20 @@ class Config(object):
     OUO_IO_API_KEY = ""
     MAX_MESSAGE_LENGTH = 4096
     PROCESS_MAX_TIMEOUT = 3600
-    DEF_WATER_MARK_FILE = "@UploaderXNTBot"
+    DEF_WATER_MARK_FILE = "@chorkipro"
 
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
 
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "mongodb+srv://uploaderskbot:himu1122@cluster0.sbtvozx.mongodb.net/?retryWrites=true&w=majority"))
     LOGGER = logging
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
-    SESSION_NAME = "UploaderXNTBot"
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
+    OWNER_ID = int(os.environ.get("OWNER_ID", "1700797877"))
+    SESSION_NAME = "Uploaderskbot"
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002573938501")
 
     TG_MIN_FILE_SIZE = 2194304000
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "moviesbd_bot")
     ADL_BOT_RQ = {}
 
     # Set False off else True
